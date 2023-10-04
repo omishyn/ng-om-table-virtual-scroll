@@ -101,9 +101,17 @@
                   "maximumWarning": "6kb"
                 }
               ]
+            },
+            "development": {
+              "buildOptimizer": false,
+              "optimization": false,
+              "vendorChunk": true,
+              "extractLicenses": false,
+              "sourceMap": true,
+              "namedChunks": true
             }
           },
-          "defaultConfiguration": ""
+          "defaultConfiguration": "development"
         },
         "serve": {
           "builder": "@angular-builders/custom-webpack:dev-server",
