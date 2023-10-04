@@ -1,0 +1,9 @@
+@import 'helpers';
+
+code {
+  @include code();
+}
+
+pre {
+  padding: 0 1em;
+}

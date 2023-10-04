@@ -1,0 +1,44 @@
+@use '@angular/material' as mat;
+@use 'helpers';
+
+@include mat.core();
+
+@include mat.all-component-themes(helpers.$mat-app-theme);
+
+@import 'highlight';
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: helpers.mat-theme-color(background, background);
+  font-family: Roboto, "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+code {
+  font-size: 90%;
+  font-family: 'Roboto Mono', monospace;
+}
+
+h1, h2 {
+  font-weight: 400;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+.docs {
+  p {
+    font-size: 16px;
+    line-height: 28px;
+  }
+}

@@ -1,0 +1,109 @@
+<h2>API reference for Angular Material table virtual scroll</h2>
+
+<p class="doc-import">
+  <code>import {{'{'}}TableVirtualScrollModule} from 'ng-table-virtual-scroll';</code>
+</p>
+
+<h3 class="h3-header">Directives</h3>
+
+<h4 class="api-class-name">
+  <code>TableItemSizeDirective</code>
+</h4>
+
+<p>
+  A virtual scroll strategy for <code>mat-table</code> that supports fixed-size items.
+</p>
+
+<p class="api-selectors">
+  <span class="label">Selector: </span>
+  <span class="name">cdk-virtual-scroll-viewport[tvsItemSize]</span>
+</p>
+
+<h5>Properties</h5>
+
+<table>
+  <thead>
+  <tr>
+    <th>Name</th>
+    <th>Description</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td class="prop-name">
+      <div class="input">@Input()</div>
+      <code>tvsItemSize: number;</code>
+    </td>
+    <td class="prop-desc">
+      The size of the row in the table (in pixels).
+      Defaults to <code>48</code>.
+    </td>
+  </tr>
+  <tr>
+    <td class="prop-name">
+      <div class="input">@Input()</div>
+      <code>headerHeight: number;</code>
+    </td>
+    <td class="prop-desc">
+      The size of the header row in the table (in pixels).
+      Defaults to <code>56</code>.
+    </td>
+  </tr>
+  <tr>
+    <td class="prop-name">
+      <div class="input">@Input()</div>
+      <code>footerHeight: number;</code>
+    </td>
+    <td class="prop-desc">
+      The size of the footer row in the table (in pixels).
+      Defaults to <code>48</code>.
+    </td>
+  </tr>
+  <tr>
+    <td class="prop-name">
+      <div class="input">@Input()</div>
+      <code>headerEnabled: boolean;</code>
+    </td>
+    <td class="prop-desc">
+      Is the header in the table (will affect on calculated table height)
+      Defaults to <code>true</code>.
+    </td>
+  </tr>
+  <tr>
+    <td class="prop-name">
+      <div class="input">@Input()</div>
+      <code>footerEnabled: boolean;</code>
+    </td>
+    <td class="prop-desc">
+      Is the footer in the table (will affect on calculated table height)
+      Defaults to <code>false</code>.
+    </td>
+  </tr>
+  <tr>
+    <td class="prop-name">
+      <div class="input">@Input()</div>
+      <code>bufferMultiplier: number;</code>
+    </td>
+    <td class="prop-desc">
+      The '<code>bufferMultiplier * visibleRowsCount</code>' number of rows will be rendered before and after visible part of the table.
+      Defaults to <code>0.7</code>.
+    </td>
+  </tr>
+  </tbody>
+</table>
+
+<h3 class="h3-header">Classes</h3>
+
+<h4 class="api-class-name">
+  <code>TableVirtualScrollDataSource</code>
+  <span class="extends">
+    extends
+    <a class="class-name" href="https://material.angular.io/components/table/api#MatTableDataSource" target="_blank">
+      MatTableDataSource
+    </a>
+  </span>
+</h4>
+
+<p>
+  Please, check the <code><a href="https://material.angular.io/components/table/api#MatTableDataSource">MatTableDataSource</a></code>
+</p>
