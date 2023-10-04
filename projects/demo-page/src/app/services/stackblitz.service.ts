@@ -18,7 +18,6 @@ const templateFiles = [
   'package.json',
   'src/index.html',
   'src/styles.scss',
-  'src/polyfills.ts',
   'src/main.ts',
 ];
 const replaceFilesPath = [
@@ -52,6 +51,7 @@ export class StackblitzService {
         description: example.title,
         template: 'angular-cli',
         dependencies: {
+          '@angular/core': '*',
           '@angular/cdk': '*',
           '@angular/material': '*',
           'ng-table-virtual-scroll': '*'
