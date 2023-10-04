@@ -38,7 +38,32 @@
     },
     "demo-page": {
       "projectType": "application",
-      "schematics": {},
+      "schematics": {
+        "@schematics/angular:class": {
+          "skipTests": true
+        },
+        "@schematics/angular:component": {
+          "skipTests": true
+        },
+        "@schematics/angular:directive": {
+          "skipTests": true
+        },
+        "@schematics/angular:guard": {
+          "skipTests": true
+        },
+        "@schematics/angular:interceptor": {
+          "skipTests": true
+        },
+        "@schematics/angular:pipe": {
+          "skipTests": true
+        },
+        "@schematics/angular:resolver": {
+          "skipTests": true
+        },
+        "@schematics/angular:service": {
+          "skipTests": true
+        }
+      },
       "root": "projects/demo-page",
       "sourceRoot": "projects/demo-page/src",
       "prefix": "app",
@@ -47,7 +72,10 @@
           "builder": "@angular-builders/custom-webpack:browser",
           "options": {
             "customWebpackConfig": {
-              "path": "./webpack.config.ts"
+              "path": "./webpack.config.ts",
+              "mergeRules": {
+                "externals": "replace"
+              }
             },
             "outputPath": "dist/demo",
             "stylePreprocessorOptions": {
@@ -57,7 +85,9 @@
             },
             "index": "projects/demo-page/src/index.html",
             "main": "projects/demo-page/src/main.ts",
-            "polyfills": "projects/demo-page/src/polyfills.ts",
+            "polyfills": [
+              "zone.js"
+            ],
             "tsConfig": "projects/demo-page/tsconfig.app.json",
             "assets": [
               "projects/demo-page/src/favicon.ico",
@@ -101,9 +131,17 @@
                   "maximumWarning": "6kb"
                 }
               ]
+            },
+            "development": {
+              "buildOptimizer": false,
+              "optimization": false,
+              "vendorChunk": true,
+              "extractLicenses": false,
+              "sourceMap": true,
+              "namedChunks": true
             }
           },
-          "defaultConfiguration": ""
+          "defaultConfiguration": "production"
         },
         "serve": {
           "builder": "@angular-builders/custom-webpack:dev-server",
@@ -112,9 +150,15 @@
           },
           "configurations": {
             "production": {
-              "browserTarget": "demo-page:build:production"
+              "browserTarget": "demo-page:build:production",
+              "port": 4400
+            },
+            "development": {
+              "browserTarget": "demo-page:build:development",
+              "port": 4400
             }
-          }
+          },
+          "defaultConfiguration": "development"
         },
         "extract-i18n": {
           "builder": "@angular-builders/custom-webpack:extract-i18n",

@@ -11,7 +11,7 @@ import {
   OnDestroy
 } from '@angular/core';
 import { MatTable } from '@angular/material/table';
-import { combineLatest, from, Subject } from 'rxjs';
+import {combineLatest, from, Observable, Subject} from 'rxjs';
 import { delayWhen, distinctUntilChanged, map, startWith, switchMap, take, takeUntil, tap } from 'rxjs/operators';
 import { FixedSizeTableVirtualScrollStrategy } from './fixed-size-table-virtual-scroll-strategy';
 import { CdkTableVirtualScrollDataSource, isTVSDataSource, TableVirtualScrollDataSource } from './table-data-source';
@@ -162,8 +162,7 @@ export class TableItemSizeDirective<T = unknown> implements OnChanges, AfterCont
       throw new Error('[tvsItemSize] requires CdkTableVirtualScrollDataSource be set as [dataSource] of [cdk-table]');
     }
 
-    dataSource
-      .dataToRender$
+    (dataSource.dataToRender$ as Observable<any[]>)
       .pipe(
         distinctUntilChanged(),
         takeUntil(this.dataSourceChanges),
