@@ -1,18 +1,19 @@
 {
-  "name": "ng-table-virtual-scroll",
+  "name": "ng-om-table-virtual-scroll",
   "version": "15.0.0",
-  "description": "Virtual scroll for for Angular Material Table",
-  "homepage": "https://github.com/diprokon/ng-table-virtual-scroll",
+  "description": "Fork Virtual Scroll for for Angular Material Table",
+  "homepage": "https://github.com/omishyn/ng-om-table-virtual-scroll",
   "author": {
-    "name": "Dmytro Prokhorov",
-    "url": "https://github.com/diprokon"
+    "name": "Oleh Mishyn",
+    "email": "mishyn.uk@gmail.com",
+    "url": "https://github.com/omishyn"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/diprokon/ng-table-virtual-scroll.git"
+    "url": "https://github.com/omishyn/ng-om-table-virtual-scroll.git"
   },
   "bugs": {
-    "url": "https://github.com/diprokon/ng-table-virtual-scroll/issues"
+    "url": "https://github.com/omishyn/ng-om-table-virtual-scroll/issues"
   },
   "keywords": [
     "angular",
@@ -33,7 +34,8 @@
     "lint": "ng lint ng-table-virtual-scroll",
     "lint:demo": "ng lint demo-page",
     "e2e": "cypress open --component -b chrome",
-    "e2e:ci": "cypress run --component --config-file cypress.config.ts"
+    "e2e:ci": "cypress run --component --config-file cypress.config.ts",
+    "publish": "npm publish ./dist/ng-table-virtual-scroll"
   },
   "private": true,
   "dependencies": {
