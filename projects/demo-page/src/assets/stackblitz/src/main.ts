@@ -28,7 +28,6 @@ import { <%exampleComponentName%> } from './app/<%exampleName%>.component';
     MatSortModule,
     MatCheckboxModule,
   ],
-  entryComponents: [<%exampleComponentName%>],
   declarations: [<%exampleComponentName%>],
   bootstrap: [<%exampleComponentName%>],
 })
