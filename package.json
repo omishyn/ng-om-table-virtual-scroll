@@ -84,6 +84,7 @@
     "raw-loader": "^4.0.2",
     "style-loader": "^3.3.3",
     "ts-node": "~10.9.1",
-    "typescript": "~5.1.6"
+    "typescript": "~5.1.6",
+    "webpack": "^5.88.2"
   }
 }
