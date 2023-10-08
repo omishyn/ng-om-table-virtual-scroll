@@ -1,14 +1,14 @@
-import { ScrollingModule } from '@angular/cdk/scrolling';
-import { CdkTableModule } from '@angular/cdk/table';
-import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatSortModule } from '@angular/material/sort';
 import { MatTableModule } from '@angular/material/table';
+import { CdkTableModule } from '@angular/cdk/table';
+import { ScrollingModule } from '@angular/cdk/scrolling';
 import { TableVirtualScrollModule } from 'ng-om-table-virtual-scroll';
-// import { BaseExampleComponent } from './base-example/base-example.component';
+// import { BaseExampleComponent } from '../../assets/examples/base-example/base-example.component';
 // import { CdkExampleComponent } from './cdk-example/cdk-example.component';
 // import { FilterSortSelectExampleComponent } from './filter-sort-select-example/filter-sort-select-example.component';
 // import { FooterExampleComponent } from './footer-example/footer-example.component';

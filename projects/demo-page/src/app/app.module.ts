@@ -21,7 +21,7 @@ import { CodeExampleComponent } from './code-example/code-example.component';
 import { HIGHLIGHT_OPTIONS, HighlightModule } from 'ngx-highlightjs';
 import { AppRoutingModule } from './app-routing.module';
 import { ExamplesPageComponent } from './examples-page/examples-page.component';
-import { ExamplesModule } from './examples';
+// import { ExamplesModule } from './examples';
 import { APP_BASE_HREF, CommonModule, PlatformLocation } from '@angular/common';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
@@ -51,7 +51,7 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
     MatTableModule,
     HighlightModule,
     AppRoutingModule,
-    ExamplesModule,
+    // ExamplesModule,
     MatCardModule,
     MatExpansionModule,
     MatTooltipModule,

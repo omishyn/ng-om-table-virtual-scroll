@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { TableVirtualScrollDataSource } from 'ng-om-table-virtual-scroll';
+import {MatTableModule} from '@angular/material/table';
+import {TableVirtualScrollDataSource, TableVirtualScrollModule} from 'ng-om-table-virtual-scroll';
 
 const DATA = Array.from({length: 1000}, (v, i) => ({
   id: i + 1,
@@ -7,8 +8,13 @@ const DATA = Array.from({length: 1000}, (v, i) => ({
 }));
 
 @Component({
+  standalone: true,
   selector: 'app-base-example',
   templateUrl: './base-example.component.html',
+  imports: [
+    TableVirtualScrollModule,
+    MatTableModule
+  ],
   styleUrls: ['./base-example.component.css']
 })
 export class BaseExampleComponent {
