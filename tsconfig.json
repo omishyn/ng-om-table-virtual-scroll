@@ -26,8 +26,9 @@
       "dom"
     ],
     "paths": {
-      "ng-table-virtual-scroll": [
-        "projects/ng-table-virtual-scroll/src/public-api.ts"
+      "ng-om-table-virtual-scroll": [
+        "dist/ng-om-table-virtual-scroll",
+        "projects/ng-om-table-virtual-scroll/src/public-api.ts"
       ]
     },
     "useDefineForClassFields": false

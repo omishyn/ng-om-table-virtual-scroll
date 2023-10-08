@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 const snippets = {
-  importModule: `import { TableVirtualScrollModule } from 'ng-table-virtual-scroll';
+  importModule: `import { TableVirtualScrollModule } from 'ng-om-table-virtual-scroll';
 
 @NgModule({
   imports: [

@@ -26,8 +26,4 @@ export class AppComponent {
       label: 'EXAMPLES'
     }
   ];
-
-  constructor() {
-
-  }
 }

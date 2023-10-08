@@ -1,7 +1,7 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { SelectionModel } from '@angular/cdk/collections';
 import { MatSort } from '@angular/material/sort';
-import { TableVirtualScrollDataSource } from 'ng-table-virtual-scroll';
+import { TableVirtualScrollDataSource } from 'ng-om-table-virtual-scroll';
 
 interface PeriodicElement {
   name: string;

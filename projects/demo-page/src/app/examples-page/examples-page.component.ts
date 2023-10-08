@@ -8,10 +8,5 @@ import { examples } from '../examples';
   styleUrls: ['./examples-page.component.scss']
 })
 export class ExamplesPageComponent {
-
   examples = examples;
-
-  constructor() {
-  }
-
 }

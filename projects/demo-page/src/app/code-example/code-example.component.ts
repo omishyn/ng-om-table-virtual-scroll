@@ -10,15 +10,10 @@ import { StackblitzService } from '../services';
   styleUrls: ['./code-example.component.scss']
 })
 export class CodeExampleComponent implements OnInit {
+  @Input() title: string;
+  @Input() example: Example;
 
-  @Input()
-  title: string;
-
-  @Input()
-  example: Example;
-
-  @ViewChild('container', { read: ViewContainerRef, static: true })
-  container: ViewContainerRef;
+  @ViewChild('container', { read: ViewContainerRef, static: true }) container: ViewContainerRef;
 
   exampleSnippets: { label: string; type: string; }[] = [
     {

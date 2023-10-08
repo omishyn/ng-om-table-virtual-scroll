@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "ng-table-virtual-scroll-example": {
+    "ng-om-table-virtual-scroll-example": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -54,18 +54,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "ng-table-virtual-scroll-example:build"
+            "browserTarget": "ng-om-table-virtual-scroll-example:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "ng-table-virtual-scroll-example:build:production"
+              "browserTarget": "ng-om-table-virtual-scroll-example:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "ng-table-virtual-scroll-example:build"
+            "browserTarget": "ng-om-table-virtual-scroll-example:build"
           }
         },
         "lint": {
@@ -82,5 +82,5 @@
       }
     }
   },
-  "defaultProject": "ng-table-virtual-scroll-example"
+  "defaultProject": "ng-om-table-virtual-scroll-example"
 }

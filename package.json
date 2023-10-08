@@ -26,16 +26,16 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve demo-page",
-    "build": "ng build ng-table-virtual-scroll --configuration production",
-    "postbuild": "cp README.md dist/ng-table-virtual-scroll/README.md",
-    "build:demo": "ng build demo-page --configuration production",
+    "build": "ng build ng-om-table-virtual-scroll --configuration production",
+    "postbuild": "cp README.md dist/ng-om-table-virtual-scroll/README.md",
+    "build:demo": "ng build demo-page --configuration development",
     "postbuild:demo": "cp dist/demo/index.html dist/demo/404.html",
     "test": "ng test",
-    "lint": "ng lint ng-table-virtual-scroll",
+    "lint": "ng lint ng-om-table-virtual-scroll",
     "lint:demo": "ng lint demo-page",
     "e2e": "cypress open --component -b chrome",
     "e2e:ci": "cypress run --component --config-file cypress.config.ts",
-    "publish": "npm publish ./dist/ng-table-virtual-scroll"
+    "publish": "npm publish ./dist/ng-om-table-virtual-scroll"
   },
   "private": true,
   "dependencies": {
@@ -45,6 +45,7 @@
     "@angular/compiler": "^16.2.7",
     "@angular/core": "^16.2.7",
     "@angular/forms": "^16.2.7",
+    "@angular/language-service": "^16.2.7",
     "@angular/material": "^16.2.6",
     "@angular/platform-browser": "^16.2.7",
     "@angular/platform-browser-dynamic": "^16.2.7",

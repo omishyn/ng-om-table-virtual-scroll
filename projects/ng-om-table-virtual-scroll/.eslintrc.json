@@ -10,8 +10,8 @@
       ],
       "parserOptions": {
         "project": [
-          "projects/ng-table-virtual-scroll/tsconfig.lib.json",
-          "projects/ng-table-virtual-scroll/tsconfig.spec.json"
+          "projects/ng-om-table-virtual-scroll/tsconfig.lib.json",
+          "projects/ng-om-table-virtual-scroll/tsconfig.spec.json"
         ],
         "createDefaultProgram": true
       },

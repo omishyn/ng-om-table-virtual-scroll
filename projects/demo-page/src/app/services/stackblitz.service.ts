@@ -47,14 +47,14 @@ export class StackblitzService {
     stackBlitzSDK.openProject(
       {
         files: this.getFiles(example),
-        title: 'ng-table-virtual-scroll | ' + example.title,
+        title: 'ng-om-table-virtual-scroll | ' + example.title,
         description: example.title,
         template: 'angular-cli',
         dependencies: {
           '@angular/core': '*',
           '@angular/cdk': '*',
           '@angular/material': '*',
-          'ng-table-virtual-scroll': '*'
+          'ng-om-table-virtual-scroll': '*'
         }
       },
       {

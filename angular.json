@@ -3,21 +3,21 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "ng-table-virtual-scroll": {
+    "ng-om-table-virtual-scroll": {
       "projectType": "library",
-      "root": "projects/ng-table-virtual-scroll",
-      "sourceRoot": "projects/ng-table-virtual-scroll/src",
+      "root": "projects/ng-om-table-virtual-scroll",
+      "sourceRoot": "projects/ng-om-table-virtual-scroll/src",
       "prefix": "tvs",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:ng-packagr",
           "options": {
-            "tsConfig": "projects/ng-table-virtual-scroll/tsconfig.lib.json",
-            "project": "projects/ng-table-virtual-scroll/ng-package.json"
+            "tsConfig": "projects/ng-om-table-virtual-scroll/tsconfig.lib.json",
+            "project": "projects/ng-om-table-virtual-scroll/ng-package.json"
           },
           "configurations": {
             "production": {
-              "tsConfig": "projects/ng-table-virtual-scroll/tsconfig.lib.prod.json"
+              "tsConfig": "projects/ng-om-table-virtual-scroll/tsconfig.lib.prod.json"
             }
           }
         },
@@ -29,8 +29,8 @@
           "builder": "@angular-eslint/builder:lint",
           "options": {
             "lintFilePatterns": [
-              "projects/ng-table-virtual-scroll/**/*.ts",
-              "projects/ng-table-virtual-scroll/**/*.html"
+              "projects/ng-om-table-virtual-scroll/**/*.ts",
+              "projects/ng-om-table-virtual-scroll/**/*.html"
             ]
           }
         }
@@ -112,7 +112,7 @@
                   "with": "projects/demo-page/src/environments/environment.prod.ts"
                 }
               ],
-              "baseHref": "/ng-table-virtual-scroll/",
+              "baseHref": "/ng-om-table-virtual-scroll/",
               "optimization": true,
               "outputHashing": "none",
               "sourceMap": false,
@@ -123,8 +123,7 @@
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "2mb",
-                  "maximumError": "5mb"
+                  "maximumWarning": "2mb"
                 },
                 {
                   "type": "anyComponentStyle",
