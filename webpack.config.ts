@@ -13,14 +13,5 @@ module.exports = (config, options, targetOptions) => {
     type: 'asset/source',
   });
 
-  config.module.rules.push({
-    resourceQuery: /ngResource/,
-    type: 'asset/source',
-  });
-
-  config.target = ['web', 'es2022'];
-
-  console.log({rules: config.module.rules});
-
   return config;
 };
