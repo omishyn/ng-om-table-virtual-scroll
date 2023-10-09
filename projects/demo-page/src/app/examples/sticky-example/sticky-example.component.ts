@@ -1,6 +1,6 @@
+import { Component } from '@angular/core';
 import {CdkTableModule} from '@angular/cdk/table';
 import {CommonModule} from '@angular/common';
-import {Component} from '@angular/core';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
@@ -15,9 +15,9 @@ const DATA = Array.from({length: 1000}, (v, i) => ({
 }));
 
 @Component({
-  selector: 'app-base-example',
-  templateUrl: './base-example.component.html',
-  styleUrls: ['./base-example.component.css'],
+  selector: 'app-sticky-example',
+  templateUrl: './sticky-example.component.html',
+  styleUrls: ['./sticky-example.component.css'],
   standalone: true,
   imports: [
     CdkTableModule,
@@ -31,7 +31,7 @@ const DATA = Array.from({length: 1000}, (v, i) => ({
     TableVirtualScrollModule
   ]
 })
-export class BaseExampleComponent {
+export class StickyExampleComponent {
 
   displayedColumns = ['id', 'name'];
 
