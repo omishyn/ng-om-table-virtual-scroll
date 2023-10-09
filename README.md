@@ -29,9 +29,8 @@ _**Version compatibility**_
 
 | Angular version | Library version |
 |-----------------|-----------------|
-| \>= 15          | latest          |
-| 13 - 14         | 1.5.*           |
-| <= 12           | 1.3.*           |
+| \>= 16          | ^16.0.0         |
+| \>= 15          | ^15.0.0         |
 
 
 <a name="usage"/>
@@ -50,6 +49,19 @@ import { TableVirtualScrollModule } from 'ng-om-table-virtual-scroll';
   ]
 })
 export class AppModule { }
+```
+```ts
+import { TableVirtualScrollModule } from 'ng-om-table-virtual-scroll';
+
+@Component({
+  standalone: true,
+  // ...
+  imports: [
+    // ...
+    TableVirtualScrollModule
+  ]
+})
+export class MyComponent { ... }
 ```
 **Note: you need to install and configure [virtual scrolling](https://material.angular.io/cdk/scrolling) (ScrollingModule) and [mat-table](https://material.angular.io/components/table) (MatTableModule) before. TableVirtualScroll only make them work together properly**
 
