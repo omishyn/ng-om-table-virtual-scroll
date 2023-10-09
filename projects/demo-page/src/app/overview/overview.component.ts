@@ -10,6 +10,18 @@ const snippets = {
   ]
 })
 export class AppModule { }
+`,
+  importStandalone: `import { TableVirtualScrollModule } from 'ng-om-table-virtual-scroll';
+
+@Component({
+  standalone: true,
+  // ...
+  imports: [
+    // ...
+    TableVirtualScrollModule
+  ]
+})
+export class MyComponent { ... }
 `
 };
 
@@ -24,8 +36,7 @@ export class OverviewComponent {
 
   versionCompatibilityColumns = ['ng', 'lib'];
   versionCompatibility = Object.entries({
-    '\>= 15': 'latest',
-    '13 - 14': '1.5.*',
-    '<= 12': '1.3.*'
+    '\>= 16': '^16.0.0',
+    '\>= 15': '^15.0.0'
   });
 }
